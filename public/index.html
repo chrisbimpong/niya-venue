@@ -1439,6 +1439,20 @@
     <!-- Twitter Bootstrap -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+    <!-- Firebase Configuration -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDhbo0BJ3Rw7mfKO8A4F4QH9zm5DBSNn6E",
+        authDomain: "niya-venue.firebaseapp.com",
+        databaseURL: "https://niya-venue.firebaseio.com",
+        storageBucket: "niya-venue.appspot.com",
+        messagingSenderId: "822213879606"
+    };
+    firebase.initializeApp(config);
+    </script>
+
     <!-- load revolution slider scripts -->
     <script type="text/javascript" src="components/revolution_slider/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
@@ -1461,21 +1475,6 @@
     <!-- load page Javascript -->
     <script type="text/javascript" src="js/theme-scripts.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-
-    <!-- Firebase Configuration -->
-    
-    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-    <script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyDhbo0BJ3Rw7mfKO8A4F4QH9zm5DBSNn6E",
-        authDomain: "niya-venue.firebaseapp.com",
-        databaseURL: "https://niya-venue.firebaseio.com",
-        storageBucket: "niya-venue.appspot.com",
-        messagingSenderId: "822213879606"
-    };
-    firebase.initializeApp(config);
-    </script>
 
     <script type="text/javascript">
         tjq(document).ready(function() {

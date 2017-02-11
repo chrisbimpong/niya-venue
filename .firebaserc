@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "niya-venue",
+    "dev": "niya-venue"
+  }
+}
