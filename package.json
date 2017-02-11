@@ -1,0 +1,33 @@
+{
+  "name": "niya-venue",
+  "version": "1.0.0",
+  "description": "Airbnb for venues.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaai/niya-venue.git"
+  },
+  "keywords": [
+    "venue",
+    "for",
+    "events"
+  ],
+  "author": "Joshua Ihejiamaizu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuaai/niya-venue/issues"
+  },
+  "homepage": "https://github.com/joshuaai/niya-venue#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "firebase": "^3.6.9",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
