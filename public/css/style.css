@@ -2080,7 +2080,7 @@ blockquote {
 
 /* 2.2.11. Price section */
 .price {
-  color: #7db921;
+  color: #c43048;
   font-size: 1.6667em;
   text-transform: uppercase;
   float: right;
@@ -8374,7 +8374,7 @@ button.ui-button::-moz-focus-inner {
     font-size: 16px;
     color: #2d3e52; }
     #footer .bottom #back-to-top i {
-      border-color: #01b7f2;
+      border-color: #c43048;
       font-weight: bold;
       overflow: hidden; }
     #footer .bottom #back-to-top:hover > i:before {
