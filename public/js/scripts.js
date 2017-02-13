@@ -208,9 +208,7 @@ NiyaVenue.prototype.checkSignedInWithMessage = function() {
 NiyaVenue.prototype.checkSetup = function() {
   if (!window.firebase || !(firebase.app instanceof Function) || !window.config) {
     window.alert('Please check your internet connection!');
-  } else {
-    window.alert('Connected Successfully!');
-  } 
+  }
 };
 
 window.onload = function() {
