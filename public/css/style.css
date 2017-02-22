@@ -155,7 +155,7 @@ a {
   color: inherit; }
 
 a:hover, a:focus {
-  color: #01b7f2;
+  color: #c43048;
   text-decoration: none; }
 
 a:focus {
@@ -1074,7 +1074,7 @@ img.full-width {
 
 section#content {
   min-height: 400px;
-  padding-top: 40px;
+  padding-top: 0px;
   text-align: left;
   background: #f5f5f5; }
   section#content:after {
@@ -1091,8 +1091,8 @@ section#content {
   padding-bottom: 30px; }
 
 .section {
-  padding-top: 80px;
-  padding-bottom: 70px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .small-box {
   margin-bottom: 20px; }
@@ -1271,7 +1271,7 @@ select option {
       right: 0;
       top: 0;
       content: '';
-      background: #5d5b5b;
+      background: #c43048;
       width: 24px;
       height: 100%; }
     .selector span.custom-select:after {
@@ -1462,7 +1462,7 @@ button {
   height: 34px;
   line-height: 34px; }
   button:hover {
-    background: #7fb231; }
+    background: #8a8a8a; }
 
 a.button {
   display: inline-block;
@@ -1607,9 +1607,9 @@ button, a.button {
     right: 0;
     width: 30px;
     height: 100%;
-    background: url(../images/icon/icon-check.png) no-repeat center center #4e4949; }
+    background: url(../images/icon/icon-check.png) no-repeat center center #c43048; }
   .icon-check:hover:after {
-    background-color: #98ce44; }
+    background-color: #c43048; }
 
 .with-icon {
   position: relative;
@@ -5496,9 +5496,10 @@ ul.check-circle li:before {
       letter-spacing: 0.04em; }
     #main-menu ul.menu > li.active > a, .chaser ul.menu > li.active > a {
       color: #c43048;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 15px; }
     #main-menu ul.menu > li:hover > a, .chaser ul.menu > li:hover > a {
-      color: #2c3e50; }
+      color: #ffffff; }
   #main-menu ul.menu > li > ul.left, .chaser ul.menu > li > ul.left {
     left: auto;
     right: -10px; }
@@ -6503,8 +6504,8 @@ ul.menu.mini {
 
 /* 4. Search Form ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* 4.1. Default Style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.search-box-wrapper {
-  background: #fff; }
+/*.search-box-wrapper {
+  background: #fff; }*/
 
 .search-box {
   margin-top: -80px;
@@ -8208,7 +8209,7 @@ button.ui-button::-moz-focus-inner {
     height: 100%;
     text-align: center;
     line-height: 34px;
-    background: #5d5b5b; }
+    background: #c43048; }
   .datepicker-wrap.yellow:after {
     background: #5d5b5b; }
   .datepicker-wrap.green:after {
