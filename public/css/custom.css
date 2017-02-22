@@ -1,4 +1,43 @@
 /*
  * Title:   Custom Style File
- * Author:  http://themeforest.net/user/soaptheme 
+ * Author:  http://themeforest.net/user/soaptheme
  */
+ .jumbotron {
+     position: relative;
+     background-image: url(../images/slide1.jpg);
+     background-size: cover;
+     background-position: center center;
+     margin-bottom: 30px;
+     text-align: center;
+     padding-bottom: 70px;
+ }
+
+.slidertext {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.slidertextchild {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btnvenuelist {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.search-for {
+    padding: 10px 1px 1px 1px;
+    margin-top: 50px;
+    background: url(../images/trans-black-30.png);
+    /*-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;*/
+    border-radius: 5px;
+}

@@ -8,7 +8,7 @@
 
     <!-- Meta Tags -->
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML5 Template" />
+    <meta name="keywords" content="NiYa" />
     <meta name="description" content="NiYa | Book Your Perfect Venue">
     <meta name="author" content="SoapTheme">
 
@@ -107,8 +107,9 @@
                                 <a href="index.html">Home</a>
                             </li>
                             <li class="menu-item-has-children">
+                              <button class="btnvenuelist">
                                 <a href="venue-listing.html">List Your Venue</a>
-
+                              </button>
                             </li>
 
                         </ul>
@@ -219,72 +220,34 @@
                 <p>Don't have an account? <a href="#travelo-signup" class="goto-signup soap-popupbox">Sign up</a></p>
             </div>
         </header>
-        <div id="slideshow">
-            <div class="fullwidthbanner-container">
-                <div class="revolution-slider" style="height: 0; overflow: hidden;">
-                    <ul>    <!-- SLIDE  -->
-                        <!-- Slide1 -->
-                        <li data-transition="zoomin" data-slotamount="7" data-masterspeed="1500">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/slider1.jpg" alt="">
-                        </li>
 
-                        <!-- Slide2 -->
-                        <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1500">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/slider2.jpg" alt="">
-                        </li>
-
-                        <!-- Slide3 -->
-                        <li data-transition="slidedown" data-slotamount="7" data-masterspeed="1500">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/slider3.jpg" alt="">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <section id="content">
+        <div class = "jumbotron">
+          <div class = "container">
+            <br /><br /><br /><br />
+            <span class="slidertext">Book Venue Spaces</span>
+            <br /><br />
+            <span class="slidertextchild">Search venues, compare prices, book and play</span>
+            <br /><br /><br />
+            <br />
+            <br />
             <div class="search-box-wrapper">
                 <div class="search-box container">
-                    <ul class="search-tabs clearfix">
-                        <li class="active"><a href="#hotels-tab" data-toggle="tab">MEETINGS</a></li>
-                        <li><a href="#flights-tab" data-toggle="tab">WEDDINGS</a></li>
-
-                        <li><a href="#cars-tab" data-toggle="tab">CONFERENCES</a></li>
-                        <li><a href="#cruises-tab" data-toggle="tab">PARTIES</a></li>
-                    </ul>
-                    <div class="visible-mobile">
-                        <ul id="mobile-search-tabs" class="search-tabs clearfix">
-                            <li class="active"><a href="#hotels-tab">MEETINGS</a></li>
-                            <li><a href="#flights-tab">WEDDINGS</a></li>
-
-                            <li><a href="#cars-tab">CONFERENCES</a></li>
-                            <li><a href="#cruises-tab">PARTIES</a></li>
-                        </ul>
-                    </div>
-
                     <div class="search-tab-content">
                         <div class="tab-pane fade active in" id="hotels-tab">
                             <form action="meetings-grid-view.html" method="post">
-                                <div class="row">
+                                <div class="row search-for">
                                     <div class="form-group col-sm-6 col-md-3">
-                                        <h4 class="title">Where</h4>
-                                        <label>Venue Location</label>
-                                        <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name" />
+                                        <input type="text" class="input-text full-width" placeholder="search for city or venue name" />
                                     </div>
 
                                     <div class="form-group col-sm-6 col-md-4">
-                                        <h4 class="title">When</h4>
                                         <div class="row">
                                             <div class="col-xs-6">
-                                                <label>Date</label>
                                                 <div class="datepicker-wrap">
                                                     <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
                                                 </div>
                                             </div>
                                             <div class="col-xs-6">
-                                                <label>Start Time</label>
                                                 <div class="selector">
                                                   <select class="full-width">
                                                     <option value="1">12:00 AM</option>
@@ -381,7 +344,7 @@
                                                     <option value="92">11:15 PM</option>
                                                     <option value="93">11:30 PM</option>
                                                     <option value="94">11:45 PM</option>
-                                                    
+
                                                   </select>
                                                 </div>
                                             </div>
@@ -389,10 +352,8 @@
                                     </div>
 
                                     <div class="form-group col-sm-6 col-md-3">
-                                        <h4 class="title">Size</h4>
                                         <div class="row">
                                             <div class="col-xs-8">
-                                                <label>Attendees</label>
                                                 <div class="selector">
                                                     <select class="full-width">
                                                         <option value="1">1-5</option>
@@ -406,694 +367,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group col-sm-6 col-md-2 fixheight">
-                                        <label class="hidden-xs">&nbsp;</label>
+                                    <div class="form-group col-sm-6 col-md-2">
                                         <button type="submit" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">SEARCH NOW</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="flights-tab">
-                          <form action="meetings-grid-view.html" method="post">
-                              <div class="row">
-                                  <div class="form-group col-sm-6 col-md-3">
-                                      <h4 class="title">Where</h4>
-                                      <label>Venue Location</label>
-                                      <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name" />
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-4">
-                                      <h4 class="title">When</h4>
-                                      <div class="row">
-                                          <div class="col-xs-6">
-                                              <label>Date</label>
-                                              <div class="datepicker-wrap">
-                                                  <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                              </div>
-                                          </div>
-                                          <div class="col-xs-6">
-                                              <label>Start Time</label>
-                                              <div class="selector">
-                                                <select class="full-width">
-                                                  <option value="1">12:00 AM</option>
-                                                  <option value="2">12:15 AM</option>
-                                                  <option value="3">12:30 AM</option>
-                                                  <option value="4">12:45 AM</option>
-                                                  <option value="5">01:00 AM</option>
-                                                  <option value="6">01:15 AM</option>
-                                                  <option value="7">01:30 AM</option>
-                                                  <option value="8">01:45 AM</option>
-                                                  <option value="9">02:00 AM</option>
-                                                  <option value="10">02:15 AM</option>
-                                                  <option value="11">02:30 AM</option>
-                                                  <option value="12">02:45 AM</option>
-                                                  <option value="13">03:00 AM</option>
-                                                  <option value="14">03:15 AM</option>
-                                                  <option value="15">03:30 AM</option>
-                                                  <option value="16">03:45 AM</option>
-                                                  <option value="17">04:15 AM</option>
-                                                  <option value="18">04:30 AM</option>
-                                                  <option value="19">04:45 AM</option>
-                                                  <option value="20">05:00 AM</option>
-                                                  <option value="21">05:15 AM</option>
-                                                  <option value="22">05:30 AM</option>
-                                                  <option value="23">05:45 AM</option>
-                                                  <option value="24">06:00 AM</option>
-                                                  <option value="25">06:15 AM</option>
-                                                  <option value="26">06:30 AM</option>
-                                                  <option value="27">06:45 AM</option>
-                                                  <option value="28">07:00 AM</option>
-                                                  <option value="29">07:15 AM</option>
-                                                  <option value="30">07:30 AM</option>
-                                                  <option value="31">07:45 AM</option>
-                                                  <option value="32">08:00 AM</option>
-                                                  <option value="33">08:15 AM</option>
-                                                  <option value="34">08:30 AM</option>
-                                                  <option value="35">08:45 AM</option>
-                                                  <option value="36">09:00 AM</option>
-                                                  <option value="37">09:15 AM</option>
-                                                  <option value="38">09:30 AM</option>
-                                                  <option value="39">09:45 AM</option>
-                                                  <option value="40">10:00 AM</option>
-                                                  <option value="41">10:15 AM</option>
-                                                  <option value="42">10:30 AM</option>
-                                                  <option value="43">10:45 AM</option>
-                                                  <option value="44">11:00 AM</option>
-                                                  <option value="45">11:15 AM</option>
-                                                  <option value="46">11:30 AM</option>
-                                                  <option value="47">11:45 AM</option>
-                                                  <option value="48">12:00 PM</option>
-                                                  <option value="49">12:15 PM</option>
-                                                  <option value="50">12:30 PM</option>
-                                                  <option value="51">12:45 PM</option>
-                                                  <option value="52">01:00 PM</option>
-                                                  <option value="53">01:15 PM</option>
-                                                  <option value="54">01:30 PM</option>
-                                                  <option value="55">01:45 PM</option>
-                                                  <option value="56">02:00 PM</option>
-                                                  <option value="57">02:15 PM</option>
-                                                  <option value="58">02:30 PM</option>
-                                                  <option value="59">02:45 PM</option>
-                                                  <option value="60">03:00 PM</option>
-                                                  <option value="61">03:15 PM</option>
-                                                  <option value="62">03:30 PM</option>
-                                                  <option value="63">03:45 PM</option>
-                                                  <option value="64">04:15 PM</option>
-                                                  <option value="65">04:30 PM</option>
-                                                  <option value="66">04:45 PM</option>
-                                                  <option value="67">05:00 PM</option>
-                                                  <option value="68">05:15 PM</option>
-                                                  <option value="69">05:30 PM</option>
-                                                  <option value="70">05:45 PM</option>
-                                                  <option value="71">06:00 PM</option>
-                                                  <option value="72">06:15 PM</option>
-                                                  <option value="73">06:30 PM</option>
-                                                  <option value="74">06:45 PM</option>
-                                                  <option value="75">07:00 PM</option>
-                                                  <option value="76">07:15 PM</option>
-                                                  <option value="77">07:30 PM</option>
-                                                  <option value="78">07:45 PM</option>
-                                                  <option value="79">08:00 PM</option>
-                                                  <option value="80">08:15 PM</option>
-                                                  <option value="81">08:30 PM</option>
-                                                  <option value="82">08:45 PM</option>
-                                                  <option value="83">09:00 PM</option>
-                                                  <option value="84">09:15 PM</option>
-                                                  <option value="85">09:30 PM</option>
-                                                  <option value="86">09:45 PM</option>
-                                                  <option value="87">10:00 PM</option>
-                                                  <option value="88">10:15 PM</option>
-                                                  <option value="89">10:30 PM</option>
-                                                  <option value="90">10:45 PM</option>
-                                                  <option value="91">11:00 PM</option>
-                                                  <option value="92">11:15 PM</option>
-                                                  <option value="93">11:30 PM</option>
-                                                  <option value="94">11:45 PM</option>
-                                                  
-                                                </select>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-3">
-                                      <h4 class="title">Size</h4>
-                                      <div class="row">
-                                          <div class="col-xs-8">
-                                              <label>Attendees</label>
-                                              <div class="selector">
-                                                  <select class="full-width">
-                                                      <option value="1">1-50</option>
-                                                      <option value="2">51-100</option>
-                                                      <option value="3">101-200</option>
-                                                      <option value="4">201-300</option>
-                                                      <option value="4">301-500</option>
-                                                      <option value="4">500+</option>
-                                                  </select>
-                                              </div>
-                                          </div>
-
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-2 fixheight">
-                                      <label class="hidden-xs">&nbsp;</label>
-                                      <button type="submit" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">SEARCH NOW</button>
-                                  </div>
-                              </div>
-                          </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="flight-and-hotel-tab">
-                          <form action="meetings-grid-view.html" method="post">
-                              <div class="row">
-                                  <div class="form-group col-sm-6 col-md-3">
-                                      <h4 class="title">Where</h4>
-                                      <label>Venue Location</label>
-                                      <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name" />
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-4">
-                                      <h4 class="title">When</h4>
-                                      <div class="row">
-                                          <div class="col-xs-6">
-                                              <label>Date</label>
-                                              <div class="datepicker-wrap">
-                                                  <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                              </div>
-                                          </div>
-                                          <div class="col-xs-6">
-                                              <label>Start Time</label>
-                                              <div class="selector">
-                                                <select class="full-width">
-                                                  <option value="1">12:00 AM</option>
-                                                  <option value="2">12:15 AM</option>
-                                                  <option value="3">12:30 AM</option>
-                                                  <option value="4">12:45 AM</option>
-                                                  <option value="5">01:00 AM</option>
-                                                  <option value="6">01:15 AM</option>
-                                                  <option value="7">01:30 AM</option>
-                                                  <option value="8">01:45 AM</option>
-                                                  <option value="9">02:00 AM</option>
-                                                  <option value="10">02:15 AM</option>
-                                                  <option value="11">02:30 AM</option>
-                                                  <option value="12">02:45 AM</option>
-                                                  <option value="13">03:00 AM</option>
-                                                  <option value="14">03:15 AM</option>
-                                                  <option value="15">03:30 AM</option>
-                                                  <option value="16">03:45 AM</option>
-                                                  <option value="17">04:15 AM</option>
-                                                  <option value="18">04:30 AM</option>
-                                                  <option value="19">04:45 AM</option>
-                                                  <option value="20">05:00 AM</option>
-                                                  <option value="21">05:15 AM</option>
-                                                  <option value="22">05:30 AM</option>
-                                                  <option value="23">05:45 AM</option>
-                                                  <option value="24">06:00 AM</option>
-                                                  <option value="25">06:15 AM</option>
-                                                  <option value="26">06:30 AM</option>
-                                                  <option value="27">06:45 AM</option>
-                                                  <option value="28">07:00 AM</option>
-                                                  <option value="29">07:15 AM</option>
-                                                  <option value="30">07:30 AM</option>
-                                                  <option value="31">07:45 AM</option>
-                                                  <option value="32">08:00 AM</option>
-                                                  <option value="33">08:15 AM</option>
-                                                  <option value="34">08:30 AM</option>
-                                                  <option value="35">08:45 AM</option>
-                                                  <option value="36">09:00 AM</option>
-                                                  <option value="37">09:15 AM</option>
-                                                  <option value="38">09:30 AM</option>
-                                                  <option value="39">09:45 AM</option>
-                                                  <option value="40">10:00 AM</option>
-                                                  <option value="41">10:15 AM</option>
-                                                  <option value="42">10:30 AM</option>
-                                                  <option value="43">10:45 AM</option>
-                                                  <option value="44">11:00 AM</option>
-                                                  <option value="45">11:15 AM</option>
-                                                  <option value="46">11:30 AM</option>
-                                                  <option value="47">11:45 AM</option>
-                                                  <option value="48">12:00 PM</option>
-                                                  <option value="49">12:15 PM</option>
-                                                  <option value="50">12:30 PM</option>
-                                                  <option value="51">12:45 PM</option>
-                                                  <option value="52">01:00 PM</option>
-                                                  <option value="53">01:15 PM</option>
-                                                  <option value="54">01:30 PM</option>
-                                                  <option value="55">01:45 PM</option>
-                                                  <option value="56">02:00 PM</option>
-                                                  <option value="57">02:15 PM</option>
-                                                  <option value="58">02:30 PM</option>
-                                                  <option value="59">02:45 PM</option>
-                                                  <option value="60">03:00 PM</option>
-                                                  <option value="61">03:15 PM</option>
-                                                  <option value="62">03:30 PM</option>
-                                                  <option value="63">03:45 PM</option>
-                                                  <option value="64">04:15 PM</option>
-                                                  <option value="65">04:30 PM</option>
-                                                  <option value="66">04:45 PM</option>
-                                                  <option value="67">05:00 PM</option>
-                                                  <option value="68">05:15 PM</option>
-                                                  <option value="69">05:30 PM</option>
-                                                  <option value="70">05:45 PM</option>
-                                                  <option value="71">06:00 PM</option>
-                                                  <option value="72">06:15 PM</option>
-                                                  <option value="73">06:30 PM</option>
-                                                  <option value="74">06:45 PM</option>
-                                                  <option value="75">07:00 PM</option>
-                                                  <option value="76">07:15 PM</option>
-                                                  <option value="77">07:30 PM</option>
-                                                  <option value="78">07:45 PM</option>
-                                                  <option value="79">08:00 PM</option>
-                                                  <option value="80">08:15 PM</option>
-                                                  <option value="81">08:30 PM</option>
-                                                  <option value="82">08:45 PM</option>
-                                                  <option value="83">09:00 PM</option>
-                                                  <option value="84">09:15 PM</option>
-                                                  <option value="85">09:30 PM</option>
-                                                  <option value="86">09:45 PM</option>
-                                                  <option value="87">10:00 PM</option>
-                                                  <option value="88">10:15 PM</option>
-                                                  <option value="89">10:30 PM</option>
-                                                  <option value="90">10:45 PM</option>
-                                                  <option value="91">11:00 PM</option>
-                                                  <option value="92">11:15 PM</option>
-                                                  <option value="93">11:30 PM</option>
-                                                  <option value="94">11:45 PM</option>
-                                                  
-                                                </select>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-3">
-                                      <h4 class="title">Size</h4>
-                                      <div class="row">
-                                          <div class="col-xs-8">
-                                              <label>Attendees</label>
-                                              <div class="selector">
-                                                  <select class="full-width">
-                                                      <option value="1">1-5</option>
-                                                      <option value="2">6-10</option>
-                                                      <option value="3">11-20</option>
-                                                      <option value="4">21-50</option>
-                                                  </select>
-                                              </div>
-                                          </div>
-
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-2 fixheight">
-                                      <label class="hidden-xs">&nbsp;</label>
-                                      <button type="submit" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">SEARCH NOW</button>
-                                  </div>
-                              </div>
-                          </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="cars-tab">
-                          <form action="meetings-grid-view.html" method="post">
-                              <div class="row">
-                                  <div class="form-group col-sm-6 col-md-3">
-                                      <h4 class="title">Where</h4>
-                                      <label>Venue Location</label>
-                                      <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name" />
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-4">
-                                      <h4 class="title">When</h4>
-                                      <div class="row">
-                                          <div class="col-xs-6">
-                                              <label>Date</label>
-                                              <div class="datepicker-wrap">
-                                                  <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                              </div>
-                                          </div>
-                                          <div class="col-xs-6">
-                                              <label>Start Time</label>
-                                              <div class="selector">
-                                                <select class="full-width">
-                                                  <option value="1">12:00 AM</option>
-                                                  <option value="2">12:15 AM</option>
-                                                  <option value="3">12:30 AM</option>
-                                                  <option value="4">12:45 AM</option>
-                                                  <option value="5">01:00 AM</option>
-                                                  <option value="6">01:15 AM</option>
-                                                  <option value="7">01:30 AM</option>
-                                                  <option value="8">01:45 AM</option>
-                                                  <option value="9">02:00 AM</option>
-                                                  <option value="10">02:15 AM</option>
-                                                  <option value="11">02:30 AM</option>
-                                                  <option value="12">02:45 AM</option>
-                                                  <option value="13">03:00 AM</option>
-                                                  <option value="14">03:15 AM</option>
-                                                  <option value="15">03:30 AM</option>
-                                                  <option value="16">03:45 AM</option>
-                                                  <option value="17">04:15 AM</option>
-                                                  <option value="18">04:30 AM</option>
-                                                  <option value="19">04:45 AM</option>
-                                                  <option value="20">05:00 AM</option>
-                                                  <option value="21">05:15 AM</option>
-                                                  <option value="22">05:30 AM</option>
-                                                  <option value="23">05:45 AM</option>
-                                                  <option value="24">06:00 AM</option>
-                                                  <option value="25">06:15 AM</option>
-                                                  <option value="26">06:30 AM</option>
-                                                  <option value="27">06:45 AM</option>
-                                                  <option value="28">07:00 AM</option>
-                                                  <option value="29">07:15 AM</option>
-                                                  <option value="30">07:30 AM</option>
-                                                  <option value="31">07:45 AM</option>
-                                                  <option value="32">08:00 AM</option>
-                                                  <option value="33">08:15 AM</option>
-                                                  <option value="34">08:30 AM</option>
-                                                  <option value="35">08:45 AM</option>
-                                                  <option value="36">09:00 AM</option>
-                                                  <option value="37">09:15 AM</option>
-                                                  <option value="38">09:30 AM</option>
-                                                  <option value="39">09:45 AM</option>
-                                                  <option value="40">10:00 AM</option>
-                                                  <option value="41">10:15 AM</option>
-                                                  <option value="42">10:30 AM</option>
-                                                  <option value="43">10:45 AM</option>
-                                                  <option value="44">11:00 AM</option>
-                                                  <option value="45">11:15 AM</option>
-                                                  <option value="46">11:30 AM</option>
-                                                  <option value="47">11:45 AM</option>
-                                                  <option value="48">12:00 PM</option>
-                                                  <option value="49">12:15 PM</option>
-                                                  <option value="50">12:30 PM</option>
-                                                  <option value="51">12:45 PM</option>
-                                                  <option value="52">01:00 PM</option>
-                                                  <option value="53">01:15 PM</option>
-                                                  <option value="54">01:30 PM</option>
-                                                  <option value="55">01:45 PM</option>
-                                                  <option value="56">02:00 PM</option>
-                                                  <option value="57">02:15 PM</option>
-                                                  <option value="58">02:30 PM</option>
-                                                  <option value="59">02:45 PM</option>
-                                                  <option value="60">03:00 PM</option>
-                                                  <option value="61">03:15 PM</option>
-                                                  <option value="62">03:30 PM</option>
-                                                  <option value="63">03:45 PM</option>
-                                                  <option value="64">04:15 PM</option>
-                                                  <option value="65">04:30 PM</option>
-                                                  <option value="66">04:45 PM</option>
-                                                  <option value="67">05:00 PM</option>
-                                                  <option value="68">05:15 PM</option>
-                                                  <option value="69">05:30 PM</option>
-                                                  <option value="70">05:45 PM</option>
-                                                  <option value="71">06:00 PM</option>
-                                                  <option value="72">06:15 PM</option>
-                                                  <option value="73">06:30 PM</option>
-                                                  <option value="74">06:45 PM</option>
-                                                  <option value="75">07:00 PM</option>
-                                                  <option value="76">07:15 PM</option>
-                                                  <option value="77">07:30 PM</option>
-                                                  <option value="78">07:45 PM</option>
-                                                  <option value="79">08:00 PM</option>
-                                                  <option value="80">08:15 PM</option>
-                                                  <option value="81">08:30 PM</option>
-                                                  <option value="82">08:45 PM</option>
-                                                  <option value="83">09:00 PM</option>
-                                                  <option value="84">09:15 PM</option>
-                                                  <option value="85">09:30 PM</option>
-                                                  <option value="86">09:45 PM</option>
-                                                  <option value="87">10:00 PM</option>
-                                                  <option value="88">10:15 PM</option>
-                                                  <option value="89">10:30 PM</option>
-                                                  <option value="90">10:45 PM</option>
-                                                  <option value="91">11:00 PM</option>
-                                                  <option value="92">11:15 PM</option>
-                                                  <option value="93">11:30 PM</option>
-                                                  <option value="94">11:45 PM</option>
-                                                  
-                                                </select>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-3">
-                                      <h4 class="title">Size</h4>
-                                      <div class="row">
-                                          <div class="col-xs-8">
-                                              <label>Attendees</label>
-                                              <div class="selector">
-                                                  <select class="full-width">
-                                                      <option value="1">1-5</option>
-                                                      <option value="2">6-10</option>
-                                                      <option value="3">11-20</option>
-                                                      <option value="4">21-50</option>
-                                                  </select>
-                                              </div>
-                                          </div>
-
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-2 fixheight">
-                                      <label class="hidden-xs">&nbsp;</label>
-                                      <button type="submit" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">SEARCH NOW</button>
-                                  </div>
-                              </div>
-                          </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="cruises-tab">
-                          <form action="meetings-grid-view.html" method="post">
-                              <div class="row">
-                                  <div class="form-group col-sm-6 col-md-3">
-                                      <h4 class="title">Where</h4>
-                                      <label>Venue Location</label>
-                                      <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name" />
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-4">
-                                      <h4 class="title">When</h4>
-                                      <div class="row">
-                                          <div class="col-xs-6">
-                                              <label>Date</label>
-                                              <div class="datepicker-wrap">
-                                                  <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                              </div>
-                                          </div>
-                                          <div class="col-xs-6">
-                                              <label>Start Time</label>
-                                              <div class="selector">
-                                                <select class="full-width">
-                                                  <option value="1">12:00 AM</option>
-                                                  <option value="2">12:15 AM</option>
-                                                  <option value="3">12:30 AM</option>
-                                                  <option value="4">12:45 AM</option>
-                                                  <option value="5">01:00 AM</option>
-                                                  <option value="6">01:15 AM</option>
-                                                  <option value="7">01:30 AM</option>
-                                                  <option value="8">01:45 AM</option>
-                                                  <option value="9">02:00 AM</option>
-                                                  <option value="10">02:15 AM</option>
-                                                  <option value="11">02:30 AM</option>
-                                                  <option value="12">02:45 AM</option>
-                                                  <option value="13">03:00 AM</option>
-                                                  <option value="14">03:15 AM</option>
-                                                  <option value="15">03:30 AM</option>
-                                                  <option value="16">03:45 AM</option>
-                                                  <option value="17">04:15 AM</option>
-                                                  <option value="18">04:30 AM</option>
-                                                  <option value="19">04:45 AM</option>
-                                                  <option value="20">05:00 AM</option>
-                                                  <option value="21">05:15 AM</option>
-                                                  <option value="22">05:30 AM</option>
-                                                  <option value="23">05:45 AM</option>
-                                                  <option value="24">06:00 AM</option>
-                                                  <option value="25">06:15 AM</option>
-                                                  <option value="26">06:30 AM</option>
-                                                  <option value="27">06:45 AM</option>
-                                                  <option value="28">07:00 AM</option>
-                                                  <option value="29">07:15 AM</option>
-                                                  <option value="30">07:30 AM</option>
-                                                  <option value="31">07:45 AM</option>
-                                                  <option value="32">08:00 AM</option>
-                                                  <option value="33">08:15 AM</option>
-                                                  <option value="34">08:30 AM</option>
-                                                  <option value="35">08:45 AM</option>
-                                                  <option value="36">09:00 AM</option>
-                                                  <option value="37">09:15 AM</option>
-                                                  <option value="38">09:30 AM</option>
-                                                  <option value="39">09:45 AM</option>
-                                                  <option value="40">10:00 AM</option>
-                                                  <option value="41">10:15 AM</option>
-                                                  <option value="42">10:30 AM</option>
-                                                  <option value="43">10:45 AM</option>
-                                                  <option value="44">11:00 AM</option>
-                                                  <option value="45">11:15 AM</option>
-                                                  <option value="46">11:30 AM</option>
-                                                  <option value="47">11:45 AM</option>
-                                                  <option value="48">12:00 PM</option>
-                                                  <option value="49">12:15 PM</option>
-                                                  <option value="50">12:30 PM</option>
-                                                  <option value="51">12:45 PM</option>
-                                                  <option value="52">01:00 PM</option>
-                                                  <option value="53">01:15 PM</option>
-                                                  <option value="54">01:30 PM</option>
-                                                  <option value="55">01:45 PM</option>
-                                                  <option value="56">02:00 PM</option>
-                                                  <option value="57">02:15 PM</option>
-                                                  <option value="58">02:30 PM</option>
-                                                  <option value="59">02:45 PM</option>
-                                                  <option value="60">03:00 PM</option>
-                                                  <option value="61">03:15 PM</option>
-                                                  <option value="62">03:30 PM</option>
-                                                  <option value="63">03:45 PM</option>
-                                                  <option value="64">04:15 PM</option>
-                                                  <option value="65">04:30 PM</option>
-                                                  <option value="66">04:45 PM</option>
-                                                  <option value="67">05:00 PM</option>
-                                                  <option value="68">05:15 PM</option>
-                                                  <option value="69">05:30 PM</option>
-                                                  <option value="70">05:45 PM</option>
-                                                  <option value="71">06:00 PM</option>
-                                                  <option value="72">06:15 PM</option>
-                                                  <option value="73">06:30 PM</option>
-                                                  <option value="74">06:45 PM</option>
-                                                  <option value="75">07:00 PM</option>
-                                                  <option value="76">07:15 PM</option>
-                                                  <option value="77">07:30 PM</option>
-                                                  <option value="78">07:45 PM</option>
-                                                  <option value="79">08:00 PM</option>
-                                                  <option value="80">08:15 PM</option>
-                                                  <option value="81">08:30 PM</option>
-                                                  <option value="82">08:45 PM</option>
-                                                  <option value="83">09:00 PM</option>
-                                                  <option value="84">09:15 PM</option>
-                                                  <option value="85">09:30 PM</option>
-                                                  <option value="86">09:45 PM</option>
-                                                  <option value="87">10:00 PM</option>
-                                                  <option value="88">10:15 PM</option>
-                                                  <option value="89">10:30 PM</option>
-                                                  <option value="90">10:45 PM</option>
-                                                  <option value="91">11:00 PM</option>
-                                                  <option value="92">11:15 PM</option>
-                                                  <option value="93">11:30 PM</option>
-                                                  <option value="94">11:45 PM</option>
-                                                  
-                                                </select>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-3">
-                                      <h4 class="title">Size</h4>
-                                      <div class="row">
-                                          <div class="col-xs-8">
-                                              <label>Attendees</label>
-                                              <div class="selector">
-                                                  <select class="full-width">
-                                                      <option value="1">1-5</option>
-                                                      <option value="2">6-10</option>
-                                                      <option value="3">11-20</option>
-                                                      <option value="4">21-50</option>
-                                                  </select>
-                                              </div>
-                                          </div>
-
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group col-sm-6 col-md-2 fixheight">
-                                      <label class="hidden-xs">&nbsp;</label>
-                                      <button type="submit" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">SEARCH NOW</button>
-                                  </div>
-                              </div>
-                          </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="flight-status-tab">
-                            <form action="flight-list-view.html" method="post">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h4 class="title">Where</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <label>Leaving From</label>
-                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>Going To</label>
-                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6 col-md-2">
-                                        <h4 class="title">When</h4>
-                                        <div class="form-group">
-                                            <label>Departure Date</label>
-                                            <div class="datepicker-wrap">
-                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6 col-md-2">
-                                        <h4 class="title">Who</h4>
-                                        <div class="form-group">
-                                            <label>Flight Number</label>
-                                            <input type="text" class="input-text full-width" placeholder="enter flight number" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-2 fixheight">
-                                        <label class="hidden-xs">&nbsp;</label>
-                                        <button type="submit" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">SEARCH NOW</button>
-
-                                        <!-- <button class="icon-check full-width">SEARCH NOW</button> -->
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="tab-pane fade" id="online-checkin-tab">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h4 class="title">Where</h4>
-                                        <div class="form-group row">
-                                            <div class="col-xs-6">
-                                                <label>Leaving From</label>
-                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <label>Going To</label>
-                                                <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6 col-md-2">
-                                        <h4 class="title">When</h4>
-                                        <div class="form-group">
-                                            <label>Departure Date</label>
-                                            <div class="datepicker-wrap">
-                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-6 col-md-2">
-                                        <h4 class="title">Who</h4>
-                                        <div class="form-group">
-                                            <label>Full Name</label>
-                                            <input type="text" class="input-text full-width" placeholder="enter your full name" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-2 fixheight">
-                                        <label class="hidden-xs">&nbsp;</label>
-                                        <button type="submit" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">SEARCH NOW</button>
-
-                                        <!-- <button class="icon-check full-width">SEARCH NOW</button> -->
                                     </div>
                                 </div>
                             </form>
@@ -1102,6 +377,10 @@
                 </div>
             </div>
 
+          </div>
+        </div>
+
+        <section id="content">
             <!-- Popuplar Destinations -->
             <div class="destinations section">
                 <div class="container">
