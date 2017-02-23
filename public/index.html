@@ -53,9 +53,6 @@
       <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
 
-    <!-- Javascript Page Loader -->
-    <script type="text/javascript" src="js/pace.min.js" data-pace-options='{ "ajax": false }'></script>
-    <script type="text/javascript" src="js/page-loading.js"></script>
 </head>
 <body>
     <div id="page-wrapper">
@@ -74,8 +71,9 @@
                         </li>
                     </ul>
                     <ul class="quick-menu pull-right">
-                        <li><a href="#travelo-login" class="soap-popupbox">LOGIN</a></li>
-                        <li><a href="#travelo-signup" class="soap-popupbox">SIGNUP</a></li>
+                        <li id="sign-in"><a href="#travelo-login" class="soap-popupbox">LOGIN</a></li>
+                        <li id="sign-up"><a href="#travelo-signup" class="soap-popupbox">SIGNUP</a></li>
+                        <li id="sign-out" hidden><a href="#">SIGNOUT</a></li>
                         <li class="ribbon currency">
                             <a href="#" title="">USD</a>
                             <ul class="menu mini">
@@ -135,8 +133,10 @@
                                 <li><a href="#" title="Afrikaans">Afrikaans</a></li>
                             </ul>
                         </li>
-                        <li><a href="#travelo-login" class="soap-popupbox">LOGIN</a></li>
-                        <li><a href="#travelo-signup" class="soap-popupbox">SIGNUP</a></li>
+                        <li id="sign-in"><a href="#" class="soap-popupbox">LOGIN</a></li>
+                        <li id="sign-up"><a href="#" class="soap-popupbox">SIGNUP</a></li>
+                        <li id="welcome-name" hidden>Welcome</li>
+                        <li id="sign-out" hidden><a href="#">SIGNOUT</a></li>
                         <li class="ribbon currency menu-color-skin">
                             <a href="#">USD</a>
                             <ul class="menu mini">
@@ -150,8 +150,8 @@
             </div>
             <div id="travelo-signup" class="travelo-signup-box travelo-box">
                 <div class="login-social">
-                    <a href="#" class="button login-facebook"><i class="soap-icon-facebook"></i>Login with Facebook</a>
-                    <a href="#" class="button login-googleplus"><i class="soap-icon-googleplus"></i>Login with Google+</a>
+                    <a href="#" id="facebook-sign-in" class="button login-facebook"><i class="soap-icon-facebook"></i>Login with Facebook</a>
+                    <a href="#" id="google-sign-in" class="button login-googleplus"><i class="soap-icon-googleplus"></i>Login with Google+</a>
                 </div>
                 <div class="seperator"><label>OR</label></div>
                 <div class="simple-signup">
@@ -163,31 +163,28 @@
                 <div class="email-signup">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="input-text full-width" placeholder="first name">
+                            <input type="text" id="first-name" class="input-text full-width" placeholder="first name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="input-text full-width" placeholder="last name">
+                            <input type="text" id="last-name" class="input-text full-width" placeholder="last name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="input-text full-width" placeholder="email address">
+                            <input type="text" id="email" class="input-text full-width" placeholder="email address">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="input-text full-width" placeholder="password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="input-text full-width" placeholder="confirm password">
+                            <input type="password" id="password" class="input-text full-width" placeholder="password">
                         </div>
                         <div class="form-group">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Tell me about NiYa news
+                                    <input type="checkbox" id="tell-me"> Tell me about NiYa news
                                 </label>
                             </div>
                         </div>
                         <div class="form-group">
                             <p class="description">By signing up, I agree to NiYa's Terms of Service, Privacy Policy, Guest Refund Policy, and Host Guarantee Terms.</p>
                         </div>
-                        <button type="submit" class="full-width btn-medium">SIGNUP</button>
+                        <button type="submit" id="email-sign-up" class="full-width btn-medium">SIGNUP</button>
                     </form>
                 </div>
                 <div class="seperator"></div>
@@ -195,8 +192,8 @@
             </div>
             <div id="travelo-login" class="travelo-login-box travelo-box">
                 <div class="login-social">
-                    <a href="#" class="button login-facebook"><i class="soap-icon-facebook"></i>Login with Facebook</a>
-                    <a href="#" class="button login-googleplus"><i class="soap-icon-googleplus"></i>Login with Google+</a>
+                    <a href="#" id="facebook-sign-in" class="button login-facebook"><i class="soap-icon-facebook"></i>Login with Facebook</a>
+                    <a href="#" id="google-sign-in" class="button login-googleplus"><i class="soap-icon-googleplus"></i>Login with Google+</a>
                 </div>
                 <div class="seperator"><label>OR</label></div>
                 <form>
@@ -214,6 +211,7 @@
                             </label>
                         </div>
                     </div>
+                    <button type="submit" id="email-sign-in" class="full-width btn-medium">LOGIN</button>
                 </form>
                 <div class="seperator"></div>
                 <p>Don't have an account? <a href="#travelo-signup" class="goto-signup soap-popupbox">Sign up</a></p>
@@ -681,24 +679,6 @@
     <!-- Twitter Bootstrap -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <!-- Firebase Configuration -->
-    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-    <script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyDhbo0BJ3Rw7mfKO8A4F4QH9zm5DBSNn6E",
-        authDomain: "niya-venue.firebaseapp.com",
-        databaseURL: "https://niya-venue.firebaseio.com",
-        storageBucket: "niya-venue.appspot.com",
-        messagingSenderId: "822213879606"
-    };
-    firebase.initializeApp(config);
-    </script>
-
-    <!-- load revolution slider scripts -->
-    <script type="text/javascript" src="components/revolution_slider/js/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
-
     <!-- load BXSlider scripts -->
     <script type="text/javascript" src="components/jquery.bxslider/jquery.bxslider.min.js"></script>
 
@@ -717,26 +697,6 @@
     <!-- load page Javascript -->
     <script type="text/javascript" src="js/theme-scripts.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-
-    <script type="text/javascript">
-        tjq(document).ready(function() {
-            tjq('.revolution-slider').revolution(
-            {
-                dottedOverlay:"none",
-                delay:8000,
-                startwidth:1170,
-                startheight:646,
-                onHoverStop:"on",
-                hideThumbs:10,
-                fullWidth:"on",
-                forceFullWidth:"on",
-                navigationType:"none",
-                shadow:0,
-                spinner:"spinner4",
-                hideTimerBar:"on",
-            });
-        });
-    </script>
 
 </body>
 </html>
