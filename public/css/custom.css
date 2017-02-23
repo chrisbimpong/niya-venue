@@ -41,3 +41,106 @@
     -moz-border-radius: 5px;*/
     border-radius: 5px;
 }
+
+.steppings {
+  font-size: 20px;
+}
+
+.belowsteppings {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.amenitieschecklist {
+  font-size: 15px;
+  border:0.5px solid #ccc;
+  width:300px;
+  height: 300px;
+  overflow-y: scroll;
+
+  border-radius: 25px;
+  padding: 10px;
+
+}
+
+.imageupload {
+  width: 10px;
+  height: 10px;
+}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #c43048;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #c43048;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
